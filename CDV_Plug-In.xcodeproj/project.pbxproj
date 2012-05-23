@@ -7,8 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D5B030A15650A33005AE501 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B030915650A33005AE501 /* MyClass.m */; };
-		5D8E15B41566974400139EC0 /* cpp in Resources */ = {isa = PBXBuildFile; fileRef = 5D8E15B31566974400139EC0 /* cpp */; };
+		5D3AFC65156CEF0D00125006 /* List in Resources */ = {isa = PBXBuildFile; fileRef = 5D3AFC62156CEF0D00125006 /* List */; };
+		5D3AFC66156CEF0D00125006 /* MyClass.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AFC64156CEF0D00125006 /* MyClass.mm */; };
+		5D3AFC6E156CF4DD00125006 /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AFC6B156CF4DD00125006 /* List.cpp */; };
+		5D3AFC6F156CF4DD00125006 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AFC6C156CF4DD00125006 /* Node.cpp */; };
+		5D3AFC70156CF4DD00125006 /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AFC6D156CF4DD00125006 /* Program.cpp */; };
+		5D3AFC74156CF4EC00125006 /* Console.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AFC71156CF4EC00125006 /* Console.cpp */; };
+		5D3AFC75156CF4EC00125006 /* GC.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AFC72156CF4EC00125006 /* GC.cpp */; };
+		5D3AFC76156CF4EC00125006 /* gcptr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AFC73156CF4EC00125006 /* gcptr.cpp */; };
+		5D3AFC7A156CF54600125006 /* Object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AFC77156CF54600125006 /* Object.cpp */; };
+		5D3AFC7B156CF54600125006 /* Random.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AFC78156CF54600125006 /* Random.cpp */; };
+		5D3AFC7C156CF54600125006 /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AFC79156CF54600125006 /* String.cpp */; };
+		5D3AFC7E156CF57200125006 /* Utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D3AFC7D156CF57200125006 /* Utils.cpp */; };
 		5DAA96881564F27F00090538 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAA96871564F27F00090538 /* Foundation.framework */; };
 		5DAA968A1564F27F00090538 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAA96891564F27F00090538 /* UIKit.framework */; };
 		5DAA968C1564F27F00090538 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAA968B1564F27F00090538 /* CoreGraphics.framework */; };
@@ -45,9 +55,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5D5B030815650A33005AE501 /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
-		5D5B030915650A33005AE501 /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
-		5D8E15B31566974400139EC0 /* cpp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cpp; sourceTree = "<group>"; };
+		5D3AFC62156CEF0D00125006 /* List */ = {isa = PBXFileReference; lastKnownFileType = folder; name = List; path = Plugins/List; sourceTree = "<group>"; };
+		5D3AFC63156CEF0D00125006 /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyClass.h; path = Plugins/MyClass.h; sourceTree = "<group>"; };
+		5D3AFC64156CEF0D00125006 /* MyClass.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MyClass.mm; path = Plugins/MyClass.mm; sourceTree = "<group>"; };
+		5D3AFC6B156CF4DD00125006 /* List.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = List.cpp; path = "CDV_Plug-In/Plugins/List/List.cpp"; sourceTree = "<group>"; };
+		5D3AFC6C156CF4DD00125006 /* Node.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Node.cpp; path = "CDV_Plug-In/Plugins/List/Node.cpp"; sourceTree = "<group>"; };
+		5D3AFC6D156CF4DD00125006 /* Program.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Program.cpp; path = "CDV_Plug-In/Plugins/List/Program.cpp"; sourceTree = "<group>"; };
+		5D3AFC71156CF4EC00125006 /* Console.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Console.cpp; path = "CDV_Plug-In/Plugins/List/System/Console.cpp"; sourceTree = "<group>"; };
+		5D3AFC72156CF4EC00125006 /* GC.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GC.cpp; path = "CDV_Plug-In/Plugins/List/System/GC.cpp"; sourceTree = "<group>"; };
+		5D3AFC73156CF4EC00125006 /* gcptr.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = gcptr.cpp; path = "CDV_Plug-In/Plugins/List/System/gcptr.cpp"; sourceTree = "<group>"; };
+		5D3AFC77156CF54600125006 /* Object.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Object.cpp; path = "CDV_Plug-In/Plugins/List/System/Object.cpp"; sourceTree = "<group>"; };
+		5D3AFC78156CF54600125006 /* Random.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Random.cpp; path = "CDV_Plug-In/Plugins/List/System/Random.cpp"; sourceTree = "<group>"; };
+		5D3AFC79156CF54600125006 /* String.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = String.cpp; path = "CDV_Plug-In/Plugins/List/System/String.cpp"; sourceTree = "<group>"; };
+		5D3AFC7D156CF57200125006 /* Utils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Utils.cpp; path = "CDV_Plug-In/Plugins/List/Utils.cpp"; sourceTree = "<group>"; };
 		5DAA96831564F27F00090538 /* CDV_Plug-In.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDV_Plug-In.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DAA96871564F27F00090538 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5DAA96891564F27F00090538 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -124,8 +144,17 @@
 		5DAA96751564F27F00090538 = {
 			isa = PBXGroup;
 			children = (
-				5D8E15B31566974400139EC0 /* cpp */,
+				5D3AFC6B156CF4DD00125006 /* List.cpp */,
+				5D3AFC6C156CF4DD00125006 /* Node.cpp */,
+				5D3AFC77156CF54600125006 /* Object.cpp */,
+				5D3AFC78156CF54600125006 /* Random.cpp */,
+				5D3AFC79156CF54600125006 /* String.cpp */,
+				5D3AFC71156CF4EC00125006 /* Console.cpp */,
+				5D3AFC72156CF4EC00125006 /* GC.cpp */,
+				5D3AFC73156CF4EC00125006 /* gcptr.cpp */,
+				5D3AFC6D156CF4DD00125006 /* Program.cpp */,
 				5DAA96E91565080E00090538 /* Cordova.plist */,
+				5D3AFC7D156CF57200125006 /* Utils.cpp */,
 				5DAA96DF1564F3C800090538 /* www */,
 				5DAA96A11564F28000090538 /* CDV_Plug-In */,
 				5DAA96861564F27F00090538 /* Frameworks */,
@@ -266,9 +295,10 @@
 		5DAA96D61564F28000090538 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				5D3AFC62156CEF0D00125006 /* List */,
+				5D3AFC63156CEF0D00125006 /* MyClass.h */,
+				5D3AFC64156CEF0D00125006 /* MyClass.mm */,
 				5DAA96D71564F28000090538 /* README */,
-				5D5B030815650A33005AE501 /* MyClass.h */,
-				5D5B030915650A33005AE501 /* MyClass.m */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";
@@ -342,7 +372,7 @@
 				5DAA96D91564F28000090538 /* verify.sh in Resources */,
 				5DAA96E01564F3C800090538 /* www in Resources */,
 				5DAA96EA1565080E00090538 /* Cordova.plist in Resources */,
-				5D8E15B41566974400139EC0 /* cpp in Resources */,
+				5D3AFC65156CEF0D00125006 /* List in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,9 +400,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DAA96A91564F28000090538 /* main.m in Sources */,
+				5D3AFC6E156CF4DD00125006 /* List.cpp in Sources */,
+				5D3AFC7A156CF54600125006 /* Object.cpp in Sources */,
+				5D3AFC7B156CF54600125006 /* Random.cpp in Sources */,
+				5D3AFC7C156CF54600125006 /* String.cpp in Sources */,
+				5D3AFC6F156CF4DD00125006 /* Node.cpp in Sources */,
+				5D3AFC74156CF4EC00125006 /* Console.cpp in Sources */,
+				5D3AFC75156CF4EC00125006 /* GC.cpp in Sources */,
+				5D3AFC76156CF4EC00125006 /* gcptr.cpp in Sources */,
+				5D3AFC70156CF4DD00125006 /* Program.cpp in Sources */,
+				5D3AFC7E156CF57200125006 /* Utils.cpp in Sources */,
 				5DAA96D01564F28000090538 /* AppDelegate.m in Sources */,
 				5DAA96D31564F28000090538 /* MainViewController.m in Sources */,
-				5D5B030A15650A33005AE501 /* MyClass.m in Sources */,
+				5D3AFC66156CEF0D00125006 /* MyClass.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

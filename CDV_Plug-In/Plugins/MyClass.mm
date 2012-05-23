@@ -12,6 +12,10 @@
 
 -(void)print:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options  
 {
+    String args[] = {"","",""};
+    List::Program::Main(args);
+    
+    /*
     // The first argument in the arguments parameter is the callbackID.
     // We use this to send data back to the successCallback or failureCallback
     // through PluginResult.   
@@ -40,5 +44,6 @@
         // Call  the Failure Javascript function
         [self writeJavascript: [pluginResult toErrorCallbackString:self.callbackID]];
     }
+     */
 }
 @end
