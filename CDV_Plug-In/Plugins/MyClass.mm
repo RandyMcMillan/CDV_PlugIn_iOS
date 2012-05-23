@@ -12,38 +12,20 @@
 
 -(void)print:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options  
 {
-    String args[] = {"","",""};
-    List::Program::Main(args);
-    
-    /*
     // The first argument in the arguments parameter is the callbackID.
     // We use this to send data back to the successCallback or failureCallback
     // through PluginResult.   
     self.callbackID = [arguments pop];
+
+    String args[] = {"","",""};
+    List::Program::Main(args);
     
-    // Get the string that javascript sent us 
-    NSString *stringObtainedFromJavascript = [arguments objectAtIndex:0];                 
+    NSMutableString *stringToReturn = [NSMutableString stringWithString: @"ListOK"];
     
-    // Create the Message that we wish to send to the Javascript
-    NSMutableString *stringToReturn = [NSMutableString stringWithString: @"StringReceived:"];
-    
-    // Append the received string to the string we plan to send out        
-    [stringToReturn appendString: stringObtainedFromJavascript];
-    
-    // Create Plugin Result 
     CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK
                                                       messageAsString: [stringToReturn stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     
-    // Checking if the string received is HelloWorld or not
-    if ([stringObtainedFromJavascript isEqualToString:@"HelloWorld"]==YES)
-    {
-        // Call  the Success Javascript function
-        [self writeJavascript: [pluginResult toSuccessCallbackString:self.callbackID]];
-    } else
-    {    
-        // Call  the Failure Javascript function
-        [self writeJavascript: [pluginResult toErrorCallbackString:self.callbackID]];
+    [self writeJavascript: [pluginResult toSuccessCallbackString:self.callbackID]];
+    
     }
-     */
-}
 @end
