@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Cordova</title>
+        <script type="text/javascript" charset="utf-8" src="cordova-1.7.0rc1.js"></script>
+        <script type="text/javascript" charset="utf-8" src="myPlugin.js"></script>
+        <script type="text/javascript">
+        
+        document.addEventListener('deviceready',function() {
+                                  console.log("Device ready");
+                                  var btn = document.getElementById("button");
+                                  //btn.onClick = myButtonOnClick;
+                                                                    //onClick
+                                  btn.disabled = false;
+                                  
+                                  },false);//addEventListener
+            
+            function myButtonOnClick()
+            {
+                console.log("Button clicked");
+                //window.plugins.myPlugin.nativeFunction("HelloWorld"
+                window.plugins.myPlugin.print(["HelloWorld"] ,
+                                              function(r){printResult(r)},
+                                              function(e){printError(e)}
+                                              );
+                
+            }
+            function printResult(r)
+            {
+                console.log("Plugin success");
+                document.getElementById("result").innerHTML=r;            
+            }
+            
+            function printError(e)
+            {
+                console.log("Plugin error");
+                document.getElementById("result").innerHTML=e;            
+            }       
+        </script>
+    </head>
+    <body>
+        <input disabled id="button" onClick="myButtonOnClick();" type="button" value="Say Hello!"/>
+        <div id="result">Here is the result</div>        
+    </body>
+</html>

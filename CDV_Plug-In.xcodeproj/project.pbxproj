@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D5B030A15650A33005AE501 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B030915650A33005AE501 /* MyClass.m */; };
+		5D8E15B41566974400139EC0 /* cpp in Resources */ = {isa = PBXBuildFile; fileRef = 5D8E15B31566974400139EC0 /* cpp */; };
 		5DAA96881564F27F00090538 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAA96871564F27F00090538 /* Foundation.framework */; };
 		5DAA968A1564F27F00090538 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAA96891564F27F00090538 /* UIKit.framework */; };
 		5DAA968C1564F27F00090538 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAA968B1564F27F00090538 /* CoreGraphics.framework */; };
@@ -38,9 +40,14 @@
 		5DAA96D31564F28000090538 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAA96D21564F28000090538 /* MainViewController.m */; };
 		5DAA96D51564F28000090538 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5DAA96D41564F28000090538 /* MainViewController.xib */; };
 		5DAA96D91564F28000090538 /* verify.sh in Resources */ = {isa = PBXBuildFile; fileRef = 5DAA96D81564F28000090538 /* verify.sh */; };
+		5DAA96E01564F3C800090538 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 5DAA96DF1564F3C800090538 /* www */; };
+		5DAA96EA1565080E00090538 /* Cordova.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DAA96E91565080E00090538 /* Cordova.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D5B030815650A33005AE501 /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
+		5D5B030915650A33005AE501 /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
+		5D8E15B31566974400139EC0 /* cpp */ = {isa = PBXFileReference; lastKnownFileType = folder; path = cpp; sourceTree = "<group>"; };
 		5DAA96831564F27F00090538 /* CDV_Plug-In.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CDV_Plug-In.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DAA96871564F27F00090538 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5DAA96891564F27F00090538 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -55,9 +62,9 @@
 		5DAA969B1564F28000090538 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5DAA969D1564F28000090538 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		5DAA969F1564F28000090538 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		5DAA96A31564F28000090538 /* CDV_Plug-In-Info.plist */ = {isa = PBXFileReference; path = "CDV_Plug-In-Info.plist"; sourceTree = "<group>"; };
+		5DAA96A31564F28000090538 /* CDV_Plug-In-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CDV_Plug-In-Info.plist"; sourceTree = "<group>"; };
 		5DAA96A51564F28000090538 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		5DAA96A71564F28000090538 /* CDV_Plug-In-Prefix.pch */ = {isa = PBXFileReference; path = "CDV_Plug-In-Prefix.pch"; sourceTree = "<group>"; };
+		5DAA96A71564F28000090538 /* CDV_Plug-In-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CDV_Plug-In-Prefix.pch"; sourceTree = "<group>"; };
 		5DAA96A81564F28000090538 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5DAA96AA1564F28000090538 /* Cordova.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cordova.framework; path = /Users/Shared/Cordova/Frameworks/Cordova.framework; sourceTree = "<absolute>"; };
 		5DAA96AF1564F28000090538 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -71,13 +78,15 @@
 		5DAA96C71564F28000090538 /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x~iphone.png"; path = "Resources/splash/Default@2x~iphone.png"; sourceTree = "<group>"; };
 		5DAA96C91564F28000090538 /* Capture.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Capture.bundle; path = Resources/Capture.bundle; sourceTree = "<group>"; };
 		5DAA96CB1564F28000090538 /* Cordova.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Cordova.plist; sourceTree = "<group>"; };
-		5DAA96CE1564F28000090538 /* AppDelegate.h */ = {isa = PBXFileReference; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		5DAA96CE1564F28000090538 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		5DAA96CF1564F28000090538 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
-		5DAA96D11564F28000090538 /* MainViewController.h */ = {isa = PBXFileReference; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
+		5DAA96D11564F28000090538 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
 		5DAA96D21564F28000090538 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
 		5DAA96D41564F28000090538 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainViewController.xib; path = Classes/MainViewController.xib; sourceTree = "<group>"; };
-		5DAA96D71564F28000090538 /* README */ = {isa = PBXFileReference; name = README; path = Plugins/README; sourceTree = "<group>"; };
+		5DAA96D71564F28000090538 /* README */ = {isa = PBXFileReference; lastKnownFileType = text; name = README; path = Plugins/README; sourceTree = "<group>"; };
 		5DAA96D81564F28000090538 /* verify.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = verify.sh; sourceTree = "<group>"; };
+		5DAA96DF1564F3C800090538 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		5DAA96E91565080E00090538 /* Cordova.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Cordova.plist; path = "CDV_Plug-In/Cordova.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +124,9 @@
 		5DAA96751564F27F00090538 = {
 			isa = PBXGroup;
 			children = (
+				5D8E15B31566974400139EC0 /* cpp */,
+				5DAA96E91565080E00090538 /* Cordova.plist */,
+				5DAA96DF1564F3C800090538 /* www */,
 				5DAA96A11564F28000090538 /* CDV_Plug-In */,
 				5DAA96861564F27F00090538 /* Frameworks */,
 				5DAA96841564F27F00090538 /* Products */,
@@ -255,6 +267,8 @@
 			isa = PBXGroup;
 			children = (
 				5DAA96D71564F28000090538 /* README */,
+				5D5B030815650A33005AE501 /* MyClass.h */,
+				5D5B030915650A33005AE501 /* MyClass.m */,
 			);
 			name = Plugins;
 			sourceTree = "<group>";
@@ -326,6 +340,9 @@
 				5DAA96CC1564F28000090538 /* Cordova.plist in Resources */,
 				5DAA96D51564F28000090538 /* MainViewController.xib in Resources */,
 				5DAA96D91564F28000090538 /* verify.sh in Resources */,
+				5DAA96E01564F3C800090538 /* www in Resources */,
+				5DAA96EA1565080E00090538 /* Cordova.plist in Resources */,
+				5D8E15B41566974400139EC0 /* cpp in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +372,7 @@
 				5DAA96A91564F28000090538 /* main.m in Sources */,
 				5DAA96D01564F28000090538 /* AppDelegate.m in Sources */,
 				5DAA96D31564F28000090538 /* MainViewController.m in Sources */,
+				5D5B030A15650A33005AE501 /* MyClass.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +546,7 @@
 				5DAA96DE1564F28000090538 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
