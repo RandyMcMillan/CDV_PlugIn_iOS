@@ -2,24 +2,24 @@
 <html>
     <head>
         <title>Cordova</title>
-        <script type="text/javascript" charset="utf-8" src="cordova-1.7.0rc1.js"></script>
-        <script type="text/javascript" charset="utf-8" src="myPlugin.js"></script>
+        <script type="text/javascript" charset="utf-8" src="cordova-2.3.0.js"></script>
+        <script type="text/javascript" charset="utf-8" src="MyClass.js"></script>
         <script type="text/javascript">
-        
-        document.addEventListener('deviceready',function() {
-                                  console.log("Device ready");
-                                  var btn = document.getElementById("button");
-                                  //btn.onClick = myButtonOnClick;
-                                                                    //onClick
-                                  btn.disabled = false;
-                                  
-                                  },false);//addEventListener
+            
+            document.addEventListener('deviceready',function() {
+                                      console.log("Device ready");
+                                      var btn = document.getElementById("button");
+                                      //btn.onClick = myButtonOnClick;
+                                      //onClick
+                                      btn.disabled = false;
+                                      
+                                      },false);//addEventListener
             
             function myButtonOnClick()
             {
                 console.log("Button clicked");
                 //window.plugins.myPlugin.nativeFunction("HelloWorld"
-                window.plugins.myPlugin.print([""] ,
+                window.plugins.MyClass.print([""] ,
                                               function(r){printResult(r)},
                                               function(e){printError(e)}
                                               );
@@ -28,18 +28,18 @@
             function printResult(r)
             {
                 console.log("Plugin success");
-                document.getElementById("result").innerHTML=r;            
+                document.getElementById("result").innerHTML=r;
             }
             
             function printError(e)
             {
                 console.log("Plugin error");
-                document.getElementById("result").innerHTML=e;            
-            }       
-        </script>
+                document.getElementById("result").innerHTML=e;
+            }
+            </script>
     </head>
     <body>
         <input disabled id="button" onClick="myButtonOnClick();" type="button" value="Call list in CPP"/>
-        <div id="result">Here is the result</div>        
+        <div id="result">Here is the result</div>
     </body>
 </html>
